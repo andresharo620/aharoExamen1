@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aharoExamen.Vistas.VResumen"
+             Title="Resumen">
+    <VerticalStackLayout>
+        <Label 
+              x:Name="lblUsuario"
+              TextColor="Blue"
+              FontSize="18"
+              HorizontalTextAlignment="End" >
+        </Label>
+        <Label 
+              Text="Ventana de Resumen"
+              TextColor="Blue"
+              FontSize="22"
+              HorizontalTextAlignment="Center" >
+        </Label>
+        <Grid  Margin="0,40,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+            <Label Text="Nombre:"
+                 TextColor="Black"
+                 Grid.Row="0"
+                 Grid.Column="0">
+            </Label>
+            <Label x:Name="lbNombre"
+                 Grid.Row="0"
+                 Grid.Column="1">
+            </Label>
+            <Label Text="Apellido:"
+                  TextColor="Black"
+                  Grid.Row="1"
+                  Grid.Column="0">
+            </Label>
+            <Label x:Name="lbApellido"
+                  Grid.Row="1"
+                  Grid.Column="1">
+            </Label>
+            <Label Text="Edad:"
+                  TextColor="Black"
+                  Grid.Row="2"
+                  Grid.Column="0">
+            </Label>
+            <Label x:Name="lbEdad"
+                  Grid.Row="2"
+                  Grid.Column="1">
+            </Label>
+            <Label Text="Fecha:"
+                  TextColor="Black"
+                  Grid.Row="3"
+                  Grid.Column="0">
+            </Label>
+            <Label x:Name="lbFecha"
+                  Grid.Row="3"
+                  Grid.Column="1">
+            </Label>
+            <Label Text="Ciudad:"
+                  TextColor="Black"
+                  Grid.Row="4"
+                  Grid.Column="0">
+            </Label>
+            <Label x:Name="lbCiudad"
+                  Grid.Row="4"
+                  Grid.Column="1">
+            </Label>
+            <Label Text="Pais:"
+                  TextColor="Black"
+                  Grid.Row="5"
+                  Grid.Column="0">
+            </Label>
+            <Label x:Name="lbPais"
+                  Grid.Row="5"
+                  Grid.Column="1">
+            </Label>
+            <Label Text="Monto Inicial:"
+                  TextColor="Black"
+                  Grid.Row="6"
+                  Grid.Column="0">
+            </Label>
+            <Label x:Name="lbMontoInicial"
+                  Grid.Row="6"
+                  Grid.Column="1">
+            </Label>
+            <Label Text="Pago Mensual:"
+                  TextColor="Black"
+                  Grid.Row="7"
+                  Grid.Column="0">
+            </Label>
+            <Label x:Name="lbPagoMensual"
+                  Grid.Row="7"
+                  Grid.Column="1">
+            </Label>
+            <Label Text="Pago Total:"
+                  TextColor="Black"
+                  Grid.Row="8"
+                  Grid.Column="0">
+            </Label>
+            <Label x:Name="lbPagoTotal"
+                  Grid.Row="8"
+                  Grid.Column="1">
+            </Label>
+        </Grid>
+        <Button x:Name="btnCerrar"
+                Text=" Cerrar Sesion"
+                TextColor="White"
+                FontSize="16"
+                Grid.Row="0"
+                Grid.Column="0"
+                Clicked="btnCerrar_Clicked">
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>
